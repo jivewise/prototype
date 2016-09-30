@@ -1,0 +1,48 @@
+@mixin edit-control($highlight) {
+	border-left: 5px solid $highlight;
+	padding: 1rem 0;
+	h2 {
+		color: $highlight;
+		font-size: 1.5rem;
+		text-align: left;
+		padding-left: 1rem;
+
+		i.fa {
+			float: right;
+			margin-right: 1rem;
+			color: red;
+			cursor: pointer;
+		}
+	}
+}
+
+.edit-type {
+
+	.edit-type__edit-control:nth-child(odd) {
+			@include edit-control(#79BCFB);
+	}
+
+	.edit-type__edit-control:nth-child(even) {
+			@include edit-control(#ff4f00);
+	}
+
+	.edit-type__add-control {
+		button {
+			width: 33%;
+			padding: 0.5rem;
+			text-align: center;
+			font-size: 1rem;
+			background: transparent;
+			text-decoration: underline;
+			border: 0;
+			&:last-child {
+				width: 34%;
+			}
+		}
+	}
+	.edit-type__no-controls-message {
+		color: #9f2222;
+		text-align: center;
+		margin: 1rem 0;
+	}
+}

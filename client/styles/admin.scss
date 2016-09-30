@@ -1,0 +1,38 @@
+.admin-interface {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	.device-types {
+		width: 55%;
+		height: 100%;
+		position:absolute;
+		overflow-x: hidden;
+		overflow-y: scroll;
+	}
+
+	.devices {
+		height: 100%;
+		width: 45%;
+		border-left: 5px solid #27ae60;
+		position:absolute;
+		right: 0;
+		overflow-x: hidden;
+		overflow-y: scroll;
+	}
+}
+
+
+@media screen and (max-width: 480px) {
+	.admin-interface {
+		.device-types {
+			width: 100%;
+		}
+
+		.devices {
+			display: none;
+		}
+	}
+}

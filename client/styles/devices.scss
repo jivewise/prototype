@@ -1,0 +1,43 @@
+.devices {
+	.devices__header {
+		font-size: 2rem;
+		background: #27ae60;
+		color: white;
+		text-align: center;
+		padding: 10px 0;
+		position: relative;
+		margin-bottom: 1rem;
+
+		i {
+			position: absolute;
+			left: 5px;
+			top: 1rem;
+		}
+	}
+}
+
+.device-list {
+	.device-list__device {
+		padding: 0.5rem;
+		background: white;
+		margin-bottom: 0.1rem;
+		border: 1px solid #ccc;
+		border-width: 1px 0;
+
+		h2 {
+			color: #27ae60;
+			margin-bottom: 0.2rem;
+			font-weight: normal;
+		}
+
+		sub {
+			color: #777;
+		}
+
+		i.fa {
+			float: right;
+			font-size: 2rem;
+			margin-top: -1.3rem;
+		}
+	}
+}
